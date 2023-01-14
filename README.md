@@ -59,8 +59,6 @@ Raymon Anthony Doane: 3.139% (11606)
 Winner: Diana DeGette
 ----------------------------
 ```
-<<<<<<< HEAD
 In addition, your final script should both print the analysis to the terminal and export a text file with the result.
-=======
-In addition, your final script should both print the analysis to the terminal and export a text file with the result.
->>>>>>> 5b3ff7ea247ab6052dec9db9b43a5c5ede692157
+
+
