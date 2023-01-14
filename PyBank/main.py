@@ -3,7 +3,7 @@
 # from the given dataset called 'budget_data.csv'
 # Task to calculate each of the following values:
 # The total number of months included in the dataset
-# The net total amount of "Profit/Losses" over the entire period CHECK
+# The net total amount of "Profit/Losses" over the entire period 
 # Calculate the changes in "Profit/Losses" over the entire period,
 # and then the average of those changes
 # The greatest increase in profits (date and amount) over the entire period
@@ -14,7 +14,7 @@ import os
 import csv
 
 # define the path to the csv file and txt output file
-csvpath = os.path.join('Resources','budget_data.csv')   
+csvpath = os.path.join('PyBank','Resources','budget_data.csv')   
 
 
 # Variables
@@ -61,24 +61,21 @@ with open(csvpath) as csvfile:
       # Adjust acummulated changes by substracting the first value
       total_changes = total_changes - change_per_month[0]
       
-            
-      
-      # Print All
       print("FINANCIAL ANALYSIS")
-      print()
-      print("-----------------------------")
-      print()
-      print(f"Total Months: {str(no_of_month)} ")
+      print()           
+      print("-----------------------------")  
+      print()          
+      print(f"Total Months: {str(no_of_month)}")
       print(f"Total: ${str(prof_loss)}")
       print(f"Average Change: $ {str(round(total_changes/(no_of_month-1),2))}")
       print(f"Greatest Increase in Profits: {gr_inc_mon} ($ {str(gr_inc_amt)} )")
       print(f"Greatest Decrease in Profits: {gr_dec_mon} ($ {str(gr_dec_amt)} )")
-            
-            
+      
+ 
       
 #print to text file
  
-txtpath = os.path.join('analysis','result.txt')
+txtpath = os.path.join('PyBank','analysis','result.txt')
 
 with open(txtpath, 'w') as txtfile:
       txtfile.write("FINANCIAL ANALYSIS\n")           
